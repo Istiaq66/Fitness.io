@@ -91,7 +91,7 @@ class FitnessDataWidget extends StatelessWidget {
                                 circularStrokeCap: CircularStrokeCap.round,
                                 radius: RadiusManager.r40.r,
                                 lineWidth: SizeManager.s8.w,
-                                percent: bmi / 40,
+                                percent: bmi / 100,
                                 progressColor: getProgressColor(bmi),
                                 backgroundColor: ColorManager.grey3,
                                 animateFromLastPercent: true,

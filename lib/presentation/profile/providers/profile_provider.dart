@@ -150,7 +150,7 @@ class ProfileProvider with ChangeNotifier {
     try {
       final flSpotSnapshot = await FirebaseFirestore.instance
           .collection('flSpots')
-          .doc(user!.uid)
+          .doc(user?.uid)
           .collection('flSpotsData')
           .get();
 

@@ -41,40 +41,43 @@ class _WeightLineChartState extends State<WeightLineChart> {
                     left: PaddingManager.p12,
                     top: PaddingManager.p12,
                   ),
-                  child: Row(
-                    children: [
-                      const WeightNumberColumnWidget(),
-                      SizedBox(
-                        height: SizeManager.s250.h,
-                        width: (deviceWidth - 66).w,
-                        child: LineChart(
-                          LineChartData(
-                            minX: 1,
-                            maxX: 12,
-                            minY: 0,
-                            maxY: 120,
-                            titlesData: FlTitlesData(show: false),
-                            gridData: FlGridData(show: false),
-                            borderData: FlBorderData(
-                              show: false,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        const WeightNumberColumnWidget(),
+                        SizedBox(
+                          height: SizeManager.s250.h,
+                          width: (deviceWidth - 66).w,
+                          child: LineChart(
+                            LineChartData(
+                              minX: 1,
+                              maxX: 12,
+                              minY: 0,
+                              maxY: 120,
+                              titlesData: FlTitlesData(show: false),
+                              gridData: FlGridData(show: false),
+                              borderData: FlBorderData(
+                                show: false,
+                              ),
+                              lineBarsData: [
+                                LineChartBarData(
+                                  spots: profileProvider.flSpots,
+                                  isCurved: true,
+                                  dotData: FlDotData(show: false),
+                                  color: ColorManager.limerGreen2,
+                                  barWidth: SizeManager.s3.w,
+                                  belowBarData: BarAreaData(
+                                    color: ColorManager.limeGreenOp,
+                                    show: true,
+                                  ),
+                                )
+                              ],
                             ),
-                            lineBarsData: [
-                              LineChartBarData(
-                                spots: profileProvider.flSpots,
-                                isCurved: true,
-                                dotData: FlDotData(show: false),
-                                color: ColorManager.limerGreen2,
-                                barWidth: SizeManager.s3.w,
-                                belowBarData: BarAreaData(
-                                  color: ColorManager.limeGreenOp,
-                                  show: true,
-                                ),
-                              )
-                            ],
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               );
