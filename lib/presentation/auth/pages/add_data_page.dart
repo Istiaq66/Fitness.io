@@ -67,8 +67,7 @@ class _AddDataPageState extends State<AddDataPage> {
     final homeProvider = Provider.of<HomeProvider>(context, listen: false);
     Future addUserData() async {
       try {
-        await homeProvider
-            .getUsersBMR(
+        await homeProvider.getUsersBMR(
               gender: _valueGender!,
               weight: double.parse(_weightController.text),
               height: double.parse(_heightController.text),

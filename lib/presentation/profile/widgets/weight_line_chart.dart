@@ -37,7 +37,7 @@ class _WeightLineChartState extends State<WeightLineChart> {
                 height: SizeManager.s250.h,
                 width: deviceWidth,
                 child: Padding(
-                  padding: const EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                     left: PaddingManager.p12,
                     top: PaddingManager.p12,
                   ),

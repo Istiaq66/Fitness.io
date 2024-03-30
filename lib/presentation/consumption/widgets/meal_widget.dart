@@ -54,7 +54,7 @@ class MealWidget extends StatelessWidget {
         ),
         child: Container(
           width: deviceWidth,
-          height: SizeManager.s150.h,
+          height: SizeManager.s170.h,
           decoration: BoxDecoration(
             color: ColorManager.black87,
             border: Border(
@@ -157,7 +157,7 @@ class MealWidget extends StatelessWidget {
                       title: StringsManager.proteins,
                     ),
                   ],
-                )
+                ),
               ],
             ),
           ),
