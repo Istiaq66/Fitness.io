@@ -110,13 +110,21 @@ class _LoginPageState extends State<LoginPage>
                 Padding(
                   padding: const EdgeInsets.only(bottom: PaddingManager.p8),
                   child: SizedBox(
-                    width: SizeManager.s250.w,
-                    height: SizeManager.s250.h,
+                    width: SizeManager.s150.w,
+                    height: SizeManager.s150.h,
                     child: Image.asset(
                       ImageManager.logo,
                     ),
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: PaddingManager.p8),
+                  child: Text(
+                    StringsManager.fitnessioABtitle,
+                    style: StyleManager.appbarTitleTextStyle,
+                  ),
+                ),
+                SizedBox(height: SizeManager.s100.h),
                 LoginOrRegisterView(
                   emailController: _emailController,
                   passwordController: _passwordController,
