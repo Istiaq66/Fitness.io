@@ -1,0 +1,1 @@
+ D:\\My\ Flutter\ Projects\\fitnessio-master\\.dart_tool\\flutter_build\\7a62a4b1210d637115fc2093d451b6cf\\native_assets.yaml: 
