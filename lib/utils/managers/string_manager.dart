@@ -54,7 +54,7 @@ class StringsManager {
   static const String oldEmailHint = 'Old Email';
   static const String newEmailHint = 'New Email';
   static const String deleteAccABtitle = 'DELETE ACCOUNT';
-  static const String procede = 'PROCEDE';
+  static const String procede = 'PROCEED';
   static const String uSure = 'Are your sure?';
   static const String no = 'NO';
   static const String yes = 'YES';
@@ -68,6 +68,8 @@ class StringsManager {
   static const String yoga = 'YOGA';
   static const String power = 'POWER';
   static const String confidence = 'CONFIDENCE';
+  static const String subscription = 'Subscription';
+  static const String subscriptionPackages = 'Subscription Packages';
   static const String meditation = 'MEDITATION';
   static const String mealNameHint = 'Name';
   static const String mealAmountHint = 'Amount';

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smart_home_app/presentation/settings/widgets/button_settings.dart';
 import 'package:smart_home_app/utils/managers/string_manager.dart';
 import 'package:smart_home_app/utils/managers/style_manager.dart';
@@ -83,11 +84,9 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             SettingsPageButton(
               deviceWidth: deviceWidth,
-              onTap: () {
-                //TODO:
-              },
-              iconData: Icons.help_outline,
-              title: StringsManager.support,
+              onTap: () =>   Navigator.of(context).pushNamed(Routes.subscription),
+              iconData: Icons.monetization_on,
+              title: StringsManager.subscription,
             ),
             SettingsPageButton(
               deviceWidth: deviceWidth,
@@ -105,6 +104,7 @@ class _SettingsPageState extends State<SettingsPage> {
               iconData: Icons.person_add_alt_1_outlined,
               title: StringsManager.inviteFriend,
             ),
+            SizedBox(height: SizeManager.s18.h,)
           ],
         ).animate().fadeIn(
               duration: 500.ms,

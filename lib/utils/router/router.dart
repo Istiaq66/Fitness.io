@@ -13,6 +13,7 @@ import 'package:smart_home_app/presentation/settings/pages/change_email_page.dar
 import 'package:smart_home_app/presentation/settings/pages/change_password_page.dart';
 import 'package:smart_home_app/presentation/profile/pages/change_weight_page.dart';
 import 'package:smart_home_app/presentation/settings/pages/delete_account_page.dart';
+import 'package:smart_home_app/presentation/settings/pages/subscription_page.dart';
 import 'package:smart_home_app/presentation/workouts/pages/new_exercise_page.dart';
 import 'package:smart_home_app/utils/managers/string_manager.dart';
 
@@ -32,6 +33,7 @@ class Routes {
   static const String addNewExerciseRoute = '/addExercise';
   static const String changeWeightRoute = '/changeWeight';
   static const String changeMeasurementsRoute = '/changeMeasurements';
+  static const String subscription = '/subscription';
 }
 
 class RouteGenerator {
@@ -65,6 +67,9 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const NewExercisePage());
       case Routes.changeWeightRoute:
         return MaterialPageRoute(builder: (_) => const ChangeWeightPage());
+      case Routes.subscription:
+        return MaterialPageRoute(builder: (_) => const SubscriptionPage());
+
 
       case Routes.changeMeasurementsRoute:
         return MaterialPageRoute(
